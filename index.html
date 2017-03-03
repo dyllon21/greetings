@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+
+<head>
+
+
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="greet.css">
+    <title>GREETING</title>
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1 style="text-align:center;"><em>my</em> <span class="note"> <em>greetings</em></span></h1>
+        <button type="button" onclick="myFunction()">set background image</button>
+        <script>
+            function myFunction() {
+                document.body.style.backgroundColor = "#f3f3f3";
+                document.body.style.backgroundImage = "url('img_tree.png')";
+
+            }
+        </script>
+    </header>
+    <div class="container">
+
+        <header>
+            <form id='myForm'>
+                Name:<br>
+                <input type="text" class='theName' name="name">
+
+                <p>Clicks: <a id="clicks">0</a></p>
+                <input id="resetMe" type="button" value="Reset clicks">
+
+
+                <br>
+                <br>
+                <div class='radio'>
+
+
+                    <button type="button" class="theButton">Greet Me!</button>
+                    <button type="button" class="theButton">Clear</button>
+                    <br>
+                    <br>
+                    <input type="radio" name="language" value "English" checked>English<br>
+                    <input type="radio" name="language" value "Afrikaans" checked>Afrikaans<br>
+                    <input type="radio" name="language" value "Columbia" checked>Columbia<br>
+
+            </form>
+            <br>
+            <br>
+            <form action="/action_page.php">
+                select your favourate color:
+                <input type="color" name="favcolor" value="#ff0000">
+                <input type="submit" value="Submit">
+            </form>
+            <h2 style="text-align:center;"></h2>
+            <br>
+            <br>
+            </div>
+            <div class='output' align='center' ;style-background='background-color'='blue'>
+            </div>
+
+            </script>
+
+
+</body>
+<script src="greet.js" charset='utf-8'>
+</script>
+
+</html>

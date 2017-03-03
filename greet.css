@@ -1,0 +1,42 @@
+body-style {
+     border: 25px dashed lightblue;
+     width:  250px;
+     outline:
+}
+
+.container {
+    position: relative;
+}
+
+div {
+    background-color: lime;
+    width: 300px;
+    border: 25px dashed darkblue;
+    outline: dotted blue;
+    outline-color: white;
+    padding: 25px;
+    margin: 25px;
+}
+
+header {
+    padding: 1em;
+    color: blue;
+    background-color: black;
+    clear: center;
+    text-align: center;
+}
+
+nav {
+    float: 'center';
+    max-width: 100px;
+    margin: 0;
+    padding: 1em;
+}
+span.note {
+    font-size: 120px;
+    color: red;
+}
+div.container {
+    width: 100%;
+    border: 1px dashed black;
+}
