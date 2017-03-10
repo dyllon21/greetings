@@ -1,42 +1,79 @@
-body-style {
-     border: 25px dashed lightblue;
-     width:  250px;
-     outline:
+body,
+html{
+margin: auto;
+padding: inherit;
+}
+
+form{
+  float: none;
+}
+
+  align: center;
+
 }
 
 .container {
-    position: relative;
+    position: absolute;
 }
 
 div {
-    background-color: lime;
-    width: 300px;
-    border: 25px dashed darkblue;
-    outline: dotted blue;
+    background-color: red;
+    border: 10px dashed white;
     outline-color: white;
-    padding: 25px;
-    margin: 25px;
+    padding: 10px;
+    margin: 15px;
+    border-bottom-right-radius: 60%;
+    border-bottom-left-radius: 60%
 }
 
 header {
-    padding: 1em;
-    color: blue;
+    float: center;
+    padding: 2em;
+    color: white;
     background-color: black;
-    clear: center;
     text-align: center;
+    float:left;
+    font-size-adjust: auto
+    border-radius: 35%;
+    border-spacing: inherit;
 }
 
 nav {
-    float: 'center';
-    max-width: 100px;
+    float:center;
+    max-width: 70px;
     margin: 0;
     padding: 1em;
 }
 span.note {
-    font-size: 120px;
+
+    font-size: 50px;
     color: red;
 }
-div.container {
-    width: 100%;
-    border: 1px dashed black;
+
+div.container{
+  align: center;
+  width: 45px;
+}
+.theButton{
+border-top-left-radius: 45%;
+border-bottom-right-radius:45%;
+}
+.resetClicks{
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+}
+.theName{
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.span-class{
+  align : center
+}
+div.output{
+  border-top-left-radius: 45%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 45%;
+  border-width: thin;
+  border-width: medium;
 }
