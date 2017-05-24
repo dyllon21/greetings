@@ -10,6 +10,7 @@ var namesGreeted = [];
 var newClick = 0;
 
 //console.log(namesGreeted);
+
 function incrementCounter() {
     clicks += 1;
     localStorage.setItem('clicks', clicks);
