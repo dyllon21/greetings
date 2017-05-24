@@ -1,5 +1,6 @@
 body,
 html{
+align-items: center;
 margin: auto;
 padding: inherit;
 }
@@ -32,8 +33,7 @@ header {
     color: white;
     background-color: black;
     text-align: center;
-    float:left;
-    font-size-adjust: auto
+    font-size-adjust: auto;
     border-radius: 35%;
     border-spacing: inherit;
 }

@@ -7,13 +7,13 @@ var radios = document.getElementsByName('language');
 var MyObject = document.querySelector('.myObject');
 var clearBtn = document.querySelector('.clear');
 var namesGreeted = [];
-var  newClick = 0;
+var newClick = 0;
 
 //console.log(namesGreeted);
 function incrementCounter() {
-  clicks += 1;
-  localStorage.setItem('clicks', clicks);
-  document.getElementById("clicks").innerHTML = clicks;
+    clicks += 1;
+    localStorage.setItem('clicks', clicks);
+    document.getElementById("clicks").innerHTML = clicks;
 
 }
 
@@ -27,62 +27,62 @@ if (localStorage.getItem('clicks') === null) {
 
 btn.addEventListener('click', function() {
     theName = document.querySelector('.theName');
-    if (theName.value.length > 0){
+    if (theName.value.length > 0) {
 
 
-    var greet = ''
-    if (radios[0].checked) {
-        greet = 'Hi,Hello'
-    } else if (radios[1].checked) {
-        greet = "goeie more"
-    } else if (radios[2].checked) {
-        greet = "Buenos días "
+        var greet = ''
+        if (radios[0].checked) {
+            greet = 'Hi,Hello'
+        } else if (radios[1].checked) {
+            greet = "goeie more"
+        } else if (radios[2].checked) {
+            greet = "Buenos días "
+        }
+
+
+        var nameExist = greetedBefore();
+
+        if (nameExist === false) {
+            if (nameExist.length == 0) {
+                namesGreeted[0] = theName.value;
+
+            } else {
+                namesGreeted.push(theName.value);
+            }
+
+            // newClick++;
+            incrementCounter();
+        };
+        if ((theName.value).length > 0) {
+            greeting.innerHTML = greet + " " + theName.value;
+            document.getElementById('myForm').reset();
+
+        } else {
+            greeting.innerHTML = 'require name'
+            document.getElementById('myForm').reset();
+        }
     }
-
-
-    var nameExist = greetedBefore();
-
-    if (nameExist === false){
-      if(nameExist.length == 0){
-          namesGreeted[0] = theName.value;
-
-      } else {
-          namesGreeted.push(theName.value);
-      }
-
-      // newClick++;
-      incrementCounter();
-    };
-    if ((theName.value).length > 0) {
-      greeting.innerHTML = greet + " " + theName.value;
-      document.getElementById('myForm').reset();
-
-    } else {
-      greeting.innerHTML = 'require name'
-      document.getElementById('myForm').reset();
-    }
-  }
     //if(namesGreeted[theName.value] === undefined && theName.value.length > 1){
 })
 
-function greetedBefore(){
-  var bool = false;
-  var name = theName.value;
+function greetedBefore() {
+    var bool = false;
+    var name = theName.value;
 
-  if (namesGreeted.length === 0){
-    return bool;
-  }
-
-  for(var i = 0; i < namesGreeted.length; i++){
-
-    if (namesGreeted[i] === theName.value){
-      bool = true;
+    if (namesGreeted.length === 0) {
+        return bool;
     }
-  }
 
-return bool;
+    for (var i = 0; i < namesGreeted.length; i++) {
+
+        if (namesGreeted[i] === theName.value) {
+            bool = true;
+        }
+    }
+
+    return bool;
 }
-    //namesGreeted[theName.value] = 1;
+//namesGreeted[theName.value] = 1;
 
 
 
