@@ -1,29 +1,25 @@
-body,
-html{
-margin: auto;
-padding: inherit;
+body {
+    margin: auto;
+    padding: inherit;
 }
 
-form{
-  float: none;
+form#myForm {
+  float: center;
+  padding: 2em;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size-adjust: auto;
+  /*border-radius: 25em;*/
+  border-spacing: inherit;
+
 }
 
-  align: center;
+align: center;
 
-}
-
+/*}*/
 .container {
     position: absolute;
-}
-
-div {
-    background-color: red;
-    border: 10px dashed white;
-    outline-color: white;
-    padding: 10px;
-    margin: 15px;
-    border-bottom-right-radius: 60%;
-    border-bottom-left-radius: 60%
 }
 
 header {
@@ -33,46 +29,92 @@ header {
     background-color: black;
     text-align: center;
     font-size-adjust: auto;
-    border-radius: 35%;
     border-spacing: inherit;
 }
-
 nav {
-    float:center;
+    float: center;
     max-width: 70px;
     margin: 0;
     padding: 1em;
 }
 span.note {
-
     font-size: 50px;
     color: red;
 }
+div.container {
+  border-radius: 15em;
 
-div.container{
-  align: center;
-  width: 45px;
 }
-.theButton{
-border-top-left-radius: 45%;
-border-bottom-right-radius:45%;
+.theButton {
+  position: left;
+   margin: 5px 10px;
+   background-color: #4BABBD;
+ color: #fff;
+ width: 150px;
+ height: 30px;
+   border: 1px solid #4BABBD;
+   cursor: pointer;
+   -webkit-box-shadow: 1px 1px 1px 1px grey;
+   -moz-box-shadow: 1px 1px 1px 1px grey;
+   box-shadow: 1px 1px 1px 1px grey;
+   -webkit-transition: 300ms ease-in-out;
+   -moz-transition: 300ms ease-in-out;
+   transition: 300ms ease-in-out;
+
 }
-.resetClicks{
-  border-top-right-radius: 45%;
-  border-bottom-left-radius: 45%;
+.theButton :hover{
+  background-color: #39698A;
+color: #fff;
+width: 100px;
+  border: 1px solid #39698A;
+  cursor: pointer;
+  -webkit-transition: 300ms ease-in-out;
+  -moz-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+
 }
-.theName{
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+.resetClicks :hover{
+  background-color: #39698A;
+color: #fff;
+width: 100px;
+  border: 1px solid #39698A;
+  cursor: pointer;
+  -webkit-transition: 300ms ease-in-out;
+  -moz-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+
+
 }
-.span-class{
-  align : center
+.resetClicks {
+  position: absolute;
+   /*margin: 0em 5em;*/
+   background-color: #4BABBD;
+ color: #fff;
+ width: 150px;
+ height: 30px;
+   border: 1px solid #4BABBD;
+   cursor: pointer;
+   -webkit-box-shadow: 1px 1px 1px 1px grey;
+   -moz-box-shadow: 1px 1px 1px 1px grey;
+   box-shadow: 1px 1px 1px 1px grey;
+   -webkit-transition: 300ms ease-in-out;
+   -moz-transition: 300ms ease-in-out;
+   transition: 300ms ease-in-out;
+
 }
-div.output{
-  border-top-left-radius: 45%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-right-radius: 45%;
-  border-width: thin;
-  border-width: medium;
+.theName {
+  background-color: white;
+  color:  red;
+}
+.span-class {
+    align: center;
+}
+div.output {
+  float: center;
+  padding: 2em;
+  color: red;
+  background-color: #FFF000;
+  text-align: center;
+  font-size-adjust: auto;
+
 }

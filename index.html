@@ -2,13 +2,21 @@
 <html>
 
 <head>
-  
+
     <meta charset="utf-8">
     <link rel="stylesheet" href="greet.css">
     <title>GREETING</title>
+
 </head>
 
 <body>
+  <!-- <div id="mocha"></div>
+  <script>
+         mocha.setup("bdd");
+         var assert = chai.assert;
+  </script> -->
+  <!-- <script src="greet.js" charset="utf-8"></script>
+  <script src="greet.test.js" charset="utf-8"></script> -->
 
     <header>
         <h1 style="text-align:center;"><em>my</em> <span class="note"> <em>greetings</em></span></h1>
@@ -24,7 +32,7 @@
     </header>
     <div class="container">
 
-        <header>
+
             <form id='myForm'>
                 Name:<br>
 
@@ -40,9 +48,9 @@
 
 
                     <br>
-                    <input type="radio" name="language" value "English" checked>English<br>
-                    <input type="radio" name="language" value "Afrikaans" checked>Afrikaans<br>
-                    <input type="radio" name="language" value "Columbia" checked>Columbia<br>
+                    <input type="radio" name="language" value="English" checked>English<br>
+                    <input type="radio" name="language" value="Afrikaans" checked>Afrikaans<br>
+                    <input type="radio" name="language" value="Columbia" checked>Columbia<br>
 
             </form>
             <br>
@@ -57,10 +65,20 @@
 
             </script>
 
-
+            <!-- <div id="mocha"></div>
+            <script>
+                   mocha.setup("bdd");
+                   var assert = chai.assert;
+            </script>
+            <script src="greet.js" charset="utf-8"></script>
+            <script src="greet.test.js" charset="utf-8"></script>
+ -->
 
 </body>
-<script src="greet.js" charset='utf-8'>
+<script src="javascript/greet_message.js" charset='utf-8'>
+// <!-- configure and run mocha -->
+// mocha.checkLeaks();
+// mocha.run();
 </script>
 
 </html>
