@@ -1,12 +1,33 @@
+var theName = document.getElementsByClassName('theName');
+var counter = 0;
+var resetClicks = document.getElementById('clearClicks');
+
 var namesGreeted = [];
-var clicks = 0;
-
-
 
 function incrementCounter() {
-    clicks += 1;
-     localStorage.setItem('clicks', clicks);
-    document.getElementById("clicks").innerHTML = clicks;
+    counter += 1;
+    localStorage.setItem('counter', counter);
+    document.getElementById("counter").innerHTML = counter;
+
+}
+
+function greetedBefore(name) {
+    var bool = false;
+    // var name = theName.value;
+
+    if (namesGreeted.length === 0) {
+        return bool;
+    }
+
+    for (var i = 0; i < namesGreeted.length; i++) {
+
+        if (namesGreeted[i] === name) {
+            bool = true;
+            break;
+        }
+    }
+
+    return bool;
 }
 
 if (localStorage.getItem('clicks') === null) {
@@ -14,21 +35,15 @@ if (localStorage.getItem('clicks') === null) {
     clicks = Number(localStorage.getItem('clicks'));
 } else {
     clicks = Number(localStorage.getItem('clicks'));
-    document.getElementById('clicks').innerHTML = clicks;
+    document.getElementById('counter').innerHTML = counter
 };
-var nameExist = greetedBefore();
+console.log(resetClicks);
+resetClicks.addEventListener("click", function() {
+    console.log("resetClicks");
+    //Clicks.innerHTML=0;
+    localStorage.clicks = 0;
+    localStorage.removeItem('Clicks');
+    document.getElementById('counter').innerHTML = 0;
 
-if (nameExist === false) {
-    if (nameExist.length == 0) {
-        namesGreeted[0] = theName.value;
 
-    } else {
-        namesGreeted.push(theName.value);
-    }
-
-    newClick++;
-    incrementCounter();
-};
-
- // newClick++;
-// incrementCounter();
+});

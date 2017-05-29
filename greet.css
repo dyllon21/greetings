@@ -2,6 +2,12 @@ body {
     margin: auto;
     padding: inherit;
 }
+p{
+  border-width: thin;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: thin;
+}
 
 form#myForm {
   float: center;
@@ -46,6 +52,7 @@ div.container {
 
 }
 .theButton {
+  align-content: flex-end;
   position: left;
    margin: 5px 10px;
    background-color: #4BABBD;
@@ -85,6 +92,7 @@ width: 100px;
 
 
 }
+
 .resetClicks {
   position: absolute;
    /*margin: 0em 5em;*/
